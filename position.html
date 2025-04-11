@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Practice</title>
+    <style>
+        body{
+            height: 400vh;
+        }
+        .relative{
+            width: 200px;
+            height: 200px;
+            position: relative;
+            left: 50px;
+            top: 50px;
+            background-color: red;
+        }
+        .fixed{
+            width: 200px;
+            height: 200px;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            background-color: blue;
+        }
+        .relative2{
+            width: 200px;
+            height: 200px;
+            position: relative;
+            left: 50px;
+            top: 50px;
+            margin-top: 30px;
+            background-color: purple;
+            margin-bottom: 70px;
+        }
+        .absolute{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            background-color: yellow;
+            bottom: 0;
+            right: 0;
+        }
+        .sticky{
+            width: 200px;
+            height: 200px;
+            background-color: brown;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+        div.img{
+            position: relative;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+            z-index: -1;
+        }
+        p{
+            position: absolute;
+            top: 0;
+            left: 30px;
+            color: grey;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="relative"></div>
+    <div class="fixed"></div>
+    <div class="relative2">
+        <div class="absolute"></div>
+    </div>
+    <div class="sticky"></div>
+    <div class="img">
+        <img src="yh.jpg" alt="jpg">
+        <p>Hello</p>
+    </div>
+</body>
+</html>

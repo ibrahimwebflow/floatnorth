@@ -5,18 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My page</title>
     <style>
+        *{
+            background-color: black;
+            color: white;
+        }
+        div.drop{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .form{
+            display: none;
+            background-color: blue;
+            box-shadow: 2px 4px 4px blue;
+            text-shadow: 2px 2px 2px black;
+            list-style-type: none;
+        }
+        form input{
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+        }
+        form{
+            padding: 40px;
+            margin: 10px;
+        }
+        .drop:hover .form{
+            display: block;
+            color: white;
 
+        }
+        input[type="button"]{
+            width: auto;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
     </style>
 </head>
 <body>
     <div class="drop">
         <h1>Welcome To my page</h1>
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Contact</li>
-        </ul>
+        <div class="form">
+            <form action="ok">
+                <h2>Login(Secure)</h2>
+                <input type="text" placeholder="input" id="username">
+                <input type="text" placeholder="here" id="password">
+                <input type="button" value="Submit">
+            </form>
+        </div>
     </div>
 </body>
 </html>
