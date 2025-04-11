@@ -28,6 +28,7 @@ div.main {
     background-position: center;
     background-repeat: no-repeat; */
     width: 100%;
+    margin-bottom: 0;
 }
 #human {
     float: right;
@@ -203,6 +204,12 @@ footer {
     background-color: yellow;
     color: black;
   }
+  /* #wavy{
+    width: 100%;
+    background-color: rgb(75, 75, 248);
+    height: 190px;
+    margin-top: 0;
+  } */
   
   
 
